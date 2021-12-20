@@ -12,6 +12,7 @@
 
 body {
     font-family: "Libre Baskerville";
+    line-height: 1.6em;
 
     max-width: 60rem;
     margin: 1.5em auto;
