@@ -1,4 +1,4 @@
-# placeholder name please please change
+# pnppc
 
 a discord server about collectively modifying the bot that governs it
 
