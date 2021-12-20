@@ -12,6 +12,10 @@ main = hakyll $ do
     route $ removeRoutePrefix "static/"
     compile compressCssCompiler
 
+  match "static/*" $ do
+    route $ removeRoutePrefix "static/"
+    compile copyFileCompiler
+
   match "templates/*" $ compile templateCompiler
 
   match "pages/index.md" $ do

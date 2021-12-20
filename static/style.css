@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@font-face {
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    src: url(LibreBaskerville-400.woff2);
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    font-weight: 700;
+    src: url(LibreBaskerville-700.woff2);
+}
 
 body {
     font-family: "Libre Baskerville";
 
-    max-width: 1000px;
+    max-width: 60rem;
     margin: 1.5em auto;
     padding: 0 1em;
 }
 
+@media screen and (max-width: 600px) {
+    body { font-size: 0.8em; }
+}
+
 a { text-decoration: none; }
 
-p { margin-bottom: 1.4em; }
+p { margin-bottom: 1.5em; }
