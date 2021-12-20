@@ -11,8 +11,9 @@ a discord server about collectively modifying the bot that governs it
     randomChoice(["dict",
                   "dictator",
                   "i hate you",
+                  "ircd-seven",
                   "placeholder name please please change",
                   "pnppc",
                   "qmjalpogftroml",
-                  "quit my job"])
+                  "the rest of my life"])
 </script>
