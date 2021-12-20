@@ -1,4 +1,4 @@
-# pnppc
+# i hate you
 
 a discord server about collectively modifying the bot that governs it
 
