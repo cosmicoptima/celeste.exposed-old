@@ -1,6 +1,6 @@
 # celeste
 
-my website, home of content
+You have lost The Game.
 
 \- [about](/about)  
 \- [twitter](https://twitter.com/parafactual)  
