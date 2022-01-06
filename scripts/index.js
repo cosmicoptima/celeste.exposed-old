@@ -67,7 +67,7 @@ function reload() {
 
 scriptjs("https://cdn.jsdelivr.net/npm/jaaulde-cookies/lib/jaaulde-cookies.min.js", () => {
   var visits = parseInt(cookies.get("visits"))
-  if (visits === null) visits = 1; else visits++
+  if (isNaN(visits)) visits = 1; else visits++
   cookies.set("visits", visits)
 
   if (visits < 1) { var visitMessage = `you have apparently visited this site ${visits} times.` }

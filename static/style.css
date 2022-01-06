@@ -42,3 +42,7 @@ sup {
 .footnotes {
     font-size: 0.9em;
 }
+
+.footnote-back {
+    margin-left: 0.25em;
+}

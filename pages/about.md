@@ -35,9 +35,12 @@
   </tbody>
 </table>
 
+hi, i'm celeste! i don't know who i am or what i like because i haven't figured
+myself out yet.
+
 ## projects
 
-\- [???](/dictator): discord game  
+\- [???](/dictator): strange discord game  
 \- [birdwatch](https://github.com/cosmicoptima/birdwatch): tiny twitter scraper[^1]  
 \- [[unnamed]](https://github.com/hackclub/rogue): slack game (wip)  
 \- [mu](https://github.com/cosmicoptima/mu): mpd client (wip)[^2]  
