@@ -10,6 +10,7 @@ you have lost the game!
 did you know?  
 <div id="fun-fact-wrapper">
   <span id="fun-fact"><i>loading...</i></span>
+  <button id="reload-fun-fact">⟳</button>
 </div>
 
 <script type="text/javascript" src="/index.js"/>

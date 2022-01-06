@@ -16,7 +16,7 @@ function randomTriple(f) {
 
     let query = `SELECT ?aLabel ?bLabel WHERE {
                    ?a wdt:${propertyID} ?b.
-	           SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+                   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
                  }`
     axios.get(wikidata.sparqlQuery(query)).then(res => {
       let choice = randomChoice(res.data.results.bindings)
@@ -31,4 +31,10 @@ function setFunFact(a, p, b) {
   document.getElementById("fun-fact").innerHTML = `${a} <b>(is/has) ${p}</b> ${b}`
 }
 
+function reload() {
+  document.getElementById("fun-fact").innerHTML = "<i>loading...</i>"
+  randomTriple(setFunFact)
+}
+
+document.getElementById("reload-fun-fact").onclick = reload
 randomTriple(setFunFact)
