@@ -2,7 +2,7 @@ var axios = require("axios")
 var wikidata = require("wikidata-sdk")
 
 function randomChoice(list) {
-  return list[Math.round(Math.random() * list.length)]
+  return list[Math.floor(Math.random() * list.length)]
 }
 
 function randomProperty(f) {
@@ -55,6 +55,13 @@ function reload() {
   document.getElementById("fun-fact").innerHTML = "<i>loading...</i>"
   randomTriple(setFunFact)
 }
+
+
+document.getElementById("subheader").innerHTML = randomChoice([
+  "you have lost the game!",
+  "you are now in control of your blinking!",
+  "you are now in control of your breathing!"
+])
 
 document.getElementById("reload-fun-fact").onclick = reload
 randomTriple(setFunFact)

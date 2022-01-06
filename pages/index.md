@@ -1,6 +1,6 @@
 # celeste
 
-you have lost the game!
+<span id="subheader">...</span>
 
 \- [about](/about)  
 \- [twitter](https://twitter.com/parafactual)  
