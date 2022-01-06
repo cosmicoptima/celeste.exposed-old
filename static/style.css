@@ -24,3 +24,10 @@ body {
 }
 
 a { text-decoration: none; }
+
+#fun-fact {
+    background-color: #eee;
+    padding: 0.5em;
+}
+
+#fun-fact-outer { margin-top: 0.5em; }
