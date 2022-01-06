@@ -13,6 +13,13 @@ function randomProperty(f) {
 function randomTriple(f) {
   randomProperty(property => {
     let [propertyID, propertyName] = property
+    // ID properties aren't very fun; we will forbid them
+    // this is not completely accurate and never will be
+    if (
+      propertyName.includes("ID") ||
+      propertyName.includes("identifier") ||
+      propertyName.includes("code")
+    ) { randomTriple(f); return }
 
     let query = `SELECT ?aLabel ?bLabel
                  WHERE {
