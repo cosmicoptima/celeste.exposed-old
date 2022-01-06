@@ -34,3 +34,18 @@
     </tr>
   </tbody>
 </table>
+
+## projects
+
+\- [???](/dictator): discord game  
+\- [birdwatch](https://github.com/cosmicoptima/birdwatch): tiny twitter scraper[^1]  
+\- [[unnamed]](https://github.com/hackclub/rogue): slack game (wip)  
+\- [mu](https://github.com/cosmicoptima/mu): mpd client (wip)[^2]  
+
+[^1]: i would not call this "wip", but it has some code involving proxies that
+    turned out to be worse than useless; if you see this, please nag me until i
+    remove it.
+
+[^2]: i actually don't like this project now and want to rewrite it from
+    scratch. i haven't built up the will to do this yet, but i'm still using it
+    out of shame. again please please nag me

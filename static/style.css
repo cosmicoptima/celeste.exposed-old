@@ -25,9 +25,20 @@ body {
 
 a { text-decoration: none; }
 
+/* usually sup affects line height */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+
 #fun-fact {
     background-color: #eee;
     padding: 0.5em;
 }
 
 #fun-fact-outer { margin-top: 0.5em; }
+
+.footnotes {
+    font-size: 0.9em;
+}
