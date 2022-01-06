@@ -66,11 +66,12 @@ function reload() {
 
 
 scriptjs("https://cdn.jsdelivr.net/npm/jaaulde-cookies/lib/jaaulde-cookies.min.js", () => {
-  var visits = cookies.get("visits")
+  var visits = parseInt(cookies.get("visits"))
   if (visits === null) visits = 1; else visits++
   cookies.set("visits", visits)
 
-  if (visits === 1) { var visitMessage = "you have visited this site 1 time. welcome!" }
+  if (visits < 1) { var visitMessage = `you have apparently visited this site ${visits} times.` }
+  else if (visits === 1) { var visitMessage = "you have visited this site 1 time. welcome!" }
   else if (visits < 5) { var visitMessage = `you have visited this site ${visits} times. that is a normal amount.` }
   else if (visits < 25) { var visitMessage = `you have visited this site ${visits} times. are you procrastinating?` }
   else { var visitMessage = `you have visited this site ${visits} times. this is getting creepy!` }
