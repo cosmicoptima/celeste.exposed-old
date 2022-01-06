@@ -14,15 +14,20 @@ function randomTriple(f) {
   randomProperty(property => {
     let [propertyID, propertyName] = property
 
-    let query = `SELECT ?aLabel ?bLabel WHERE {
+    let query = `SELECT ?aLabel ?bLabel
+                 WHERE {
                    ?a wdt:${propertyID} ?b.
                    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-                 }`
+                 }
+                 LIMIT 100`
     axios.get(wikidata.sparqlQuery(query)).then(res => {
-      let choice = randomChoice(res.data.results.bindings)
-      let [a, b] = [choice.aLabel.value, choice.bLabel.value]
+      let choices = res.data.results.bindings
+      if (choices.length > 0) {
+        let choice = randomChoice(res.data.results.bindings)
+        let [a, b] = [choice.aLabel.value, choice.bLabel.value]
 
-      f(a, propertyName, b)
+        f(a, propertyName, b)
+      } else randomTriple(f)
     })
   })
 }
