@@ -33,6 +33,10 @@ function randomTriple(f) {
         let choice = randomChoice(res.data.results.bindings)
         let [a, b] = [choice.aLabel.value, choice.bLabel.value]
 
+        // unnamed objects aren't very fun either
+        // (such objects have labels like Q123456789)
+        if (!isNaN(parseInt(a.slice(1)))) { randomTriple(f); return }
+
         f(a, propertyName, b)
       } else randomTriple(f)
     })
@@ -40,7 +44,11 @@ function randomTriple(f) {
 }
 
 function setFunFact(a, p, b) {
-  document.getElementById("fun-fact").innerHTML = `${a} <b>has ${p}</b> ${b}`
+  let pFirstWord = p.split(" ")[0]
+  if (pFirstWord.endsWith("ed")) { var prefix = "is " }
+  else if (pFirstWord.endsWith("s")) { var prefix = "" }
+  else { var prefix = "has " }
+  document.getElementById("fun-fact").innerHTML = `${a} <b>${prefix}${p}</b> ${b}`
 }
 
 function reload() {
