@@ -27,8 +27,8 @@
 <table id="resulttable" class="userbox" style="border-collapse: collapse; border-color: rgb(204, 204, 204);">
   <tbody>
     <tr>
-      <td id="resultid" class="id" style="border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background: rgb(204, 204, 204) none repeat scroll 0% 0%; line-height: 1.2em;">🐱</td> 
-      <td id="resultinfo" class="info" style="border: 1px solid rgb(204, 204, 204); color: rgb(0, 0, 0); background: rgb(252, 252, 252) none repeat scroll 0% 0%; line-height: 1.2em;">
+      <td id="resultid" class="id" style="border: 1px solid rgb(153, 153, 153); color: rgb(0, 0, 0); background: rgb(221, 221, 221) none repeat scroll 0% 0%; line-height: 1.2em;">🐱</td> 
+      <td id="resultinfo" class="info" style="border: 1px solid rgb(153, 153, 153); color: rgb(0, 0, 0); background: rgb(238, 238, 238) none repeat scroll 0% 0%; line-height: 1.2em;">
         This cat understands the terrible strife that is going on.
       </td>
     </tr>
