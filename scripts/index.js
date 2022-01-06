@@ -45,7 +45,7 @@ function randomTriple(f) {
 
 function setFunFact(a, p, b) {
   let pFirstWord = p.split(" ")[0]
-  if (pFirstWord.endsWith("ed") || p.endsWith(" of")) { var prefix = "is " }
+  if (pFirstWord.endsWith("ed") || p.endsWith(" of") || p.endsWith(" to")) { var prefix = "is " }
   else if (pFirstWord.endsWith("s")) { var prefix = "" }
   else { var prefix = "has " }
   document.getElementById("fun-fact").innerHTML = `${a} <b>${prefix}${p}</b> ${b}`
