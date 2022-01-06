@@ -28,7 +28,7 @@ function randomTriple(f) {
 }
 
 function setFunFact(a, p, b) {
-  document.getElementById("fun-fact").innerHTML = `${a} <b>(is/has) ${p}</b> ${b}`
+  document.getElementById("fun-fact").innerHTML = `${a} <b>has ${p}</b> ${b}`
 }
 
 function reload() {
