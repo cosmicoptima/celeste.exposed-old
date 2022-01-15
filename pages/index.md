@@ -5,6 +5,7 @@
 \- [about](/about)  
 \- [twitter](https://twitter.com/parafactual)  
 \- [github](https://github.com/cosmicoptima)  
+\- [ads](/ads)  
 \- [???](/dictator)  
 
 did you know?  
