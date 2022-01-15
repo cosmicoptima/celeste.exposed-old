@@ -68,7 +68,7 @@ function reload() {
 scriptjs("https://cdn.jsdelivr.net/npm/jaaulde-cookies/lib/jaaulde-cookies.min.js", () => {
   var visits = parseInt(cookies.get("visits"))
   if (isNaN(visits)) visits = 1; else visits++
-  cookies.set("visits", visits)
+  cookies.set("visits", visits, { expires: new Date("December 31, 2100") })
 
   if (visits < 1) { var visitMessage = `you have apparently visited this site ${visits} times.` }
   else if (visits === 1) { var visitMessage = "you have visited this site 1 time. welcome!" }
@@ -82,7 +82,8 @@ scriptjs("https://cdn.jsdelivr.net/npm/jaaulde-cookies/lib/jaaulde-cookies.min.j
     "you have lost the game!",
     "you are now in control of your blinking!",
     "you are now in control of your breathing!",
-    "you may now attend to that itch you've been neglecting!"
+    "you may now attend to that itch you've been neglecting!",
+    `you should be preparing for <a href="/zeta">the Zeta variant</a>`
   ])
 })
 

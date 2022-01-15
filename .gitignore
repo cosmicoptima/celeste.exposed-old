@@ -2,4 +2,6 @@ _cache
 _site
 .stack-work
 
+static/*.js
+
 deploy.sh
