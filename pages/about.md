@@ -29,7 +29,7 @@
     <tr>
       <td id="resultid" class="id" style="border: 1px solid rgb(153, 153, 153); color: rgb(0, 0, 0); background: rgb(221, 221, 221) none repeat scroll 0% 0%; line-height: 1.2em;">🐱</td> 
       <td id="resultinfo" class="info" style="border: 1px solid rgb(153, 153, 153); color: rgb(0, 0, 0); background: rgb(238, 238, 238) none repeat scroll 0% 0%; line-height: 1.2em;">
-        This cat understands the terrible strife that is going on.
+        This cat understands the <b>terrible strife</b> that is going on.
       </td>
     </tr>
   </tbody>
@@ -46,9 +46,9 @@ myself out yet.
 \- [mu](https://github.com/cosmicoptima/mu): mpd client (wip)[^2]  
 
 [^1]: i would not call this "wip", but it has some code involving proxies that
-    turned out to be worse than useless; if you see this, please nag me until i
-    remove it.
+      turned out to be worse than useless; if you see this, please nag me until i
+      remove it.
 
 [^2]: i actually don't like this project now and want to rewrite it from
-    scratch. i haven't built up the will to do this yet, but i'm still using it
-    out of shame. again please please nag me
+      scratch. i haven't built up the will to do this yet, but i'm still using it
+      out of shame. again please please nag me
