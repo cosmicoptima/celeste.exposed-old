@@ -2,7 +2,6 @@
 var axios = require("axios");
 var scriptjs = require("scriptjs");
 var wikidata = require("wikidata-sdk");
-
 var rows = {};
 
 function randomChoice(list) {
@@ -10,7 +9,6 @@ function randomChoice(list) {
 }
 
 function randomProperty(f) {
-  // while (rowsLock) {console.log("waiting for rows");}
   f(randomChoice(rows));
 }
 
@@ -112,13 +110,14 @@ scriptjs(
   }
 );
 
-
 axios.get("https://quarry.wmcloud.org/run/45013/output/1/json").then((res) => {
+  // wait till the data is loaded to enable the reload button and load the initial triple
   rows = res.data.rows;
-  console.log(rows);
+
   randomTriple(setFunFact);
   document.getElementById("reload-fun-fact").onclick = reload;
 });
+
 },{"axios":2,"scriptjs":31,"wikidata-sdk":60}],2:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":4}],3:[function(require,module,exports){
